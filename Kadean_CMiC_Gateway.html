@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kadean CMiC – Gateway</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      margin: 40px;
+      color: #44546A;
+    }
+    h1, h2, h3 {
+      color: #003B71;
+    }
+    h1 {
+      border-bottom: 2px solid #003B71;
+      padding-bottom: 6px;
+    }
+    ul, ol {
+      margin-left: 20px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    .meta {
+      font-style: italic;
+      margin-bottom: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Gateway</h1>
+  <p class="meta">March 2024</p>
+
+  <h2>Overview</h2>
+  <p>
+    The Project Gateway enables CMiC Field clients to easily invite their project team
+    to collaborate on any project to which they have been invited, using their
+    Single Sign-On (SSO) credentials.
+  </p>
+  <p>
+    When a collaborator signs in to CMiC Collaborate, the Project Gateway Dashboard is
+    presented. If a collaborator has been invited to work on multiple projects by
+    multiple CMiC Field users at Kadean, the dashboard lists the projects to which the
+    collaborator has been invited. Selecting a project from the dashboard navigates
+    the user to the CMiC Field portal.
+  </p>
+
+  <h2>Publish Projects to Project Gateway Dashboard</h2>
+  <p>To publish a project to the Project Gateway system:</p>
+  <ul>
+    <li>Launch the Project Maintenance screen by clicking on the project name at the top of the left menu (above <em>Project Setup</em>).</li>
+    <li>Select the <em>Gateway</em> tab.</li>
+    <li>Click <em>Edit Publishing</em> on the toolbar.</li>
+    <li>Select the <strong>Private</strong> radio button.</li>
+    <li><strong>Project Expires After</strong>:
+      <ul>
+        <li>If <strong>Yes</strong> is selected, enter the number of days before expiration.</li>
+        <li>If <strong>No</strong> is selected, the project will not automatically expire.</li>
+        <li><strong>No</strong> is typically selected.</li>
+      </ul>
+    </li>
+    <li><strong>Default Project Role</strong>: Subcontractor (recommended).</li>
+    <li><strong>Default Security Role</strong>: Subcontractor (recommended).</li>
+    <li><strong>Default LDAP Server</strong>: Select <em>Default</em>.</li>
+    <li><strong>Send All Project Contacts</strong>: Select <strong>No</strong>. Never select Yes.</li>
+    <li><strong>Gateway SSO Passthrough</strong>: Should be checked.</li>
+    <li><strong>Invitation Template</strong>: Use the default template.</li>
+    <li>Click <em>Publish to Collaborate</em>.</li>
+  </ul>
+
+  <h2>Send Invitations to Project Gateway</h2>
+  <p>
+    After a project is published, collaborators (Subcontractors, Owners, Architects,
+    and Engineers) can be invited from the Gateway tab.
+  </p>
+  <ol>
+    <li>Click <em>Select</em> in the <strong>To Be Invited</strong> section.</li>
+    <li>Choose <em>Project Contacts</em> in the pop-up window.</li>
+    <li>Select the collaborators to invite.</li>
+    <li>Click <em>Accept</em>.</li>
+    <li>Click <em>Send All</em> or select individuals and click <em>Send</em>.</li>
+    <li>Select the <em>Project</em> invitation template.</li>
+    <li>Click <em>Send</em>.</li>
+    <li>Confirm the success message.</li>
+    <li>Invited collaborators appear in the <strong>Invited Contacts</strong> section.</li>
+  </ol>
+
+</body>
+</html>
